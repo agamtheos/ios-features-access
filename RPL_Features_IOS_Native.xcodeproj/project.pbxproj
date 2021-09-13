@@ -13,6 +13,9 @@
 		04CEEEA426E908C0005C4E6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CEEEA226E908C0005C4E6A /* Main.storyboard */; };
 		04CEEEA626E908C3005C4E6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CEEEA526E908C3005C4E6A /* Assets.xcassets */; };
 		04CEEEA926E908C3005C4E6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CEEEA726E908C3005C4E6A /* LaunchScreen.storyboard */; };
+		04CEEEB226E91E69005C4E6A /* CameraAccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEEEB126E91E68005C4E6A /* CameraAccessViewController.swift */; };
+		04DAD79326EBAAE500FA8D43 /* GeoLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DAD79226EBAAE500FA8D43 /* GeoLocationViewController.swift */; };
+		04DAD79626EBAE0100FA8D43 /* LocationManageer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DAD79526EBAE0100FA8D43 /* LocationManageer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		04CEEEA526E908C3005C4E6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04CEEEA826E908C3005C4E6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04CEEEAA26E908C3005C4E6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04CEEEB126E91E68005C4E6A /* CameraAccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraAccessViewController.swift; sourceTree = "<group>"; };
+		04DAD79226EBAAE500FA8D43 /* GeoLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoLocationViewController.swift; sourceTree = "<group>"; };
+		04DAD79526EBAE0100FA8D43 /* LocationManageer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManageer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +65,10 @@
 				04CEEE9C26E908C0005C4E6A /* AppDelegate.swift */,
 				04CEEE9E26E908C0005C4E6A /* SceneDelegate.swift */,
 				04CEEEA026E908C0005C4E6A /* ViewController.swift */,
+				04CEEEB126E91E68005C4E6A /* CameraAccessViewController.swift */,
+				04DAD79226EBAAE500FA8D43 /* GeoLocationViewController.swift */,
 				04CEEEA226E908C0005C4E6A /* Main.storyboard */,
+				04DAD79526EBAE0100FA8D43 /* LocationManageer.swift */,
 				04CEEEA526E908C3005C4E6A /* Assets.xcassets */,
 				04CEEEA726E908C3005C4E6A /* LaunchScreen.storyboard */,
 				04CEEEAA26E908C3005C4E6A /* Info.plist */,
@@ -138,7 +147,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				04CEEEA126E908C0005C4E6A /* ViewController.swift in Sources */,
+				04DAD79326EBAAE500FA8D43 /* GeoLocationViewController.swift in Sources */,
+				04DAD79626EBAE0100FA8D43 /* LocationManageer.swift in Sources */,
 				04CEEE9D26E908C0005C4E6A /* AppDelegate.swift in Sources */,
+				04CEEEB226E91E69005C4E6A /* CameraAccessViewController.swift in Sources */,
 				04CEEE9F26E908C0005C4E6A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
