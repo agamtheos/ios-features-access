@@ -13,8 +13,8 @@ class MicSpeakerViewController: UIViewController, AVAudioPlayerDelegate, AVAudio
     @IBOutlet var PlayBTN: UIButton!
     @IBOutlet var RecordBTN: UIButton!
     
-    var soundRecorder : AVAudioRecorder!
-    var soundPlayer : AVAudioPlayer!
+    var soundRecorder = AVAudioRecorder()
+    var soundPlayer = AVAudioPlayer()
     var fileName = "audioFile.m4a"
     
     override func viewDidLoad() {
@@ -24,16 +24,16 @@ class MicSpeakerViewController: UIViewController, AVAudioPlayerDelegate, AVAudio
     }
     
     func setupRecorder() {
-        let recordSetts = [AVFormatIDKey : kAudioFormatAppleLossless,
+        let recordSetts : [String:Any] = [AVFormatIDKey : kAudioFormatAppleLossless,
                            AVEncoderAudioQualityKey : AVAudioQuality.max.rawValue,
                            AVEncoderBitRateKey : 320000,
                            AVNumberOfChannelsKey : 2,
-                           AVSampleRateKey : 44100.0] as [String : Any]
+                           AVSampleRateKey : 44100.0]
         do {
-            if let soundRecorder = try? AVAudioRecorder(url: getFileURL() as URL, settings: recordSetts as [String : Any]){
-                soundRecorder.delegate = self
-                soundRecorder.prepareToRecord()
-            }
+            let soundRecorder = try AVAudioRecorder(url: getFileURL() as URL, settings: recordSetts as [String : Any])
+            soundRecorder.delegate = self
+            soundRecorder.prepareToRecord()
+            
         } catch let error as NSError {
             print("An error occurred: \(error)")
         }
@@ -46,20 +46,25 @@ class MicSpeakerViewController: UIViewController, AVAudioPlayerDelegate, AVAudio
 //        }
     }
     
-    func getCacheDirectory() -> NSString {
+    func getDirectory() -> NSString {
         let paths = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
         
         return paths[0] as NSString
     }
     
     func getFileURL() -> NSURL {
-        let path = getCacheDirectory().appendingPathComponent(fileName)
+        let path = getDirectory().appendingPathComponent(fileName)
         let filePath = NSURL(fileURLWithPath: path)
         return filePath
     }
     
     @IBAction func Record(_ sender: UIButton) {
         if sender.titleLabel?.text == "Record" {
+//            if soundRecorder != nil {
+//                print("Contains a value!")
+//            } else {
+//                print("Doesn’t contain a value.")
+//            }
             soundRecorder.record()
             sender.setTitle("Stop", for:.normal)
             PlayBTN.isEnabled = false
@@ -67,12 +72,12 @@ class MicSpeakerViewController: UIViewController, AVAudioPlayerDelegate, AVAudio
         else {
             soundRecorder.stop()
             sender.setTitle("Record", for: .normal)
-            PlayBTN.isEnabled = false
+            PlayBTN.isEnabled = true
         }
     }
     @IBAction func Play(_ sender: UIButton) {
         if sender.titleLabel?.text == "Play" {
-            RecordBTN.isEnabled == false
+            RecordBTN.isEnabled == true
             sender.setTitle("Stop", for: .normal)
             
             preparePlayer()
@@ -84,13 +89,12 @@ class MicSpeakerViewController: UIViewController, AVAudioPlayerDelegate, AVAudio
     }
     
     func preparePlayer() {
-        var error : NSError?
         do {
-            if let soundPlayer = try? AVAudioPlayer(contentsOf: getFileURL() as URL) {
+            let soundPlayer = try AVAudioPlayer(contentsOf: getFileURL() as URL)
                 soundPlayer.delegate = self
                 soundPlayer.prepareToPlay()
                 soundPlayer.volume = 1.0
-            }
+        
         }
         catch let error as NSError {
                 print("An error occurred: \(error)")
