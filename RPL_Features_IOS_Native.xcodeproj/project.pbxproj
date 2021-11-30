@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0479D5D726EF8A9F008C71AF /* MicSpeakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0479D5D626EF8A9F008C71AF /* MicSpeakerViewController.swift */; };
+		048D5C1C2756331200158B54 /* FaceIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D5C1B2756331200158B54 /* FaceIdViewController.swift */; };
+		048D5C1F275640AC00158B54 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D5C1E275640AC00158B54 /* ContactListViewController.swift */; };
 		04CEEE9D26E908C0005C4E6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEEE9C26E908C0005C4E6A /* AppDelegate.swift */; };
 		04CEEE9F26E908C0005C4E6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEEE9E26E908C0005C4E6A /* SceneDelegate.swift */; };
 		04CEEEA126E908C0005C4E6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEEEA026E908C0005C4E6A /* ViewController.swift */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		0479D5D626EF8A9F008C71AF /* MicSpeakerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicSpeakerViewController.swift; sourceTree = "<group>"; };
+		048D5C1B2756331200158B54 /* FaceIdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIdViewController.swift; sourceTree = "<group>"; };
+		048D5C1E275640AC00158B54 /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
 		04CEEE9926E908C0005C4E6A /* RPL_Features_IOS_Native.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPL_Features_IOS_Native.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CEEE9C26E908C0005C4E6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04CEEE9E26E908C0005C4E6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,7 +78,9 @@
 				04DAD79526EBAE0100FA8D43 /* LocationManageer.swift */,
 				04CEEEA526E908C3005C4E6A /* Assets.xcassets */,
 				04CEEEA726E908C3005C4E6A /* LaunchScreen.storyboard */,
+				048D5C1B2756331200158B54 /* FaceIdViewController.swift */,
 				04CEEEAA26E908C3005C4E6A /* Info.plist */,
+				048D5C1E275640AC00158B54 /* ContactListViewController.swift */,
 			);
 			path = RPL_Features_IOS_Native;
 			sourceTree = "<group>";
@@ -149,7 +155,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				048D5C1C2756331200158B54 /* FaceIdViewController.swift in Sources */,
 				04CEEEA126E908C0005C4E6A /* ViewController.swift in Sources */,
+				048D5C1F275640AC00158B54 /* ContactListViewController.swift in Sources */,
 				04DAD79326EBAAE500FA8D43 /* GeoLocationViewController.swift in Sources */,
 				04DAD79626EBAE0100FA8D43 /* LocationManageer.swift in Sources */,
 				04CEEE9D26E908C0005C4E6A /* AppDelegate.swift in Sources */,

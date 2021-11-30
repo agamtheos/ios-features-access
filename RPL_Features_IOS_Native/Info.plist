@@ -68,5 +68,9 @@
 	<string>Please allow allocation access to use our app!</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Please allow to use your Microphone!</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>Please allow to continue with Face ID</string>
+	<key>NSContactsUsageDescription</key>
+	<string>Please allow to access your contacts list</string>
 </dict>
 </plist>

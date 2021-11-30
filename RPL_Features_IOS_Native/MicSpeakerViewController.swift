@@ -20,9 +20,12 @@ class MicSpeakerViewController: UIViewController, AVAudioPlayerDelegate, AVAudio
     override func viewDidLoad() {
         super.viewDidLoad()
         setupRecorder()
-        
+
     }
     
+    func stop() {
+        stop()
+    }
     func setupRecorder() {
         let recordSetts : [String:Any] = [AVFormatIDKey : kAudioFormatAppleLossless,
                            AVEncoderAudioQualityKey : AVAudioQuality.max.rawValue,
@@ -30,7 +33,7 @@ class MicSpeakerViewController: UIViewController, AVAudioPlayerDelegate, AVAudio
                            AVNumberOfChannelsKey : 2,
                            AVSampleRateKey : 44100.0]
         do {
-            let soundRecorder = try AVAudioRecorder(url: getFileURL() as URL, settings: recordSetts as [String : Any])
+            soundRecorder = try AVAudioRecorder(url: getFileURL() as URL, settings: recordSetts as [String : Any])
             soundRecorder.delegate = self
             soundRecorder.prepareToRecord()
             
@@ -60,28 +63,30 @@ class MicSpeakerViewController: UIViewController, AVAudioPlayerDelegate, AVAudio
     
     @IBAction func Record(_ sender: UIButton) {
         if sender.titleLabel?.text == "Record" {
-//            if soundRecorder != nil {
-//                print("Contains a value!")
-//            } else {
-//                print("Doesn’t contain a value.")
-//            }
             soundRecorder.record()
             sender.setTitle("Stop", for:.normal)
             PlayBTN.isEnabled = false
         }
-        else {
+        // error return nil
+        if sender.titleLabel?.text == "Stop" {
             soundRecorder.stop()
             sender.setTitle("Record", for: .normal)
             PlayBTN.isEnabled = true
+
         }
     }
     @IBAction func Play(_ sender: UIButton) {
         if sender.titleLabel?.text == "Play" {
-            RecordBTN.isEnabled == true
-            sender.setTitle("Stop", for: .normal)
-            
+            sender.setTitle("Stop", for:.normal)
             preparePlayer()
-            soundPlayer.play()
+            if preparePlayer() != nil {
+                print(preparePlayer())
+            } else{
+                print("nil")
+            }
+            RecordBTN.isEnabled = false
+
+
         }else {
             soundPlayer.stop()
             sender.setTitle("Play", for: .normal)
@@ -90,10 +95,11 @@ class MicSpeakerViewController: UIViewController, AVAudioPlayerDelegate, AVAudio
     
     func preparePlayer() {
         do {
-            let soundPlayer = try AVAudioPlayer(contentsOf: getFileURL() as URL)
-                soundPlayer.delegate = self
-                soundPlayer.prepareToPlay()
-                soundPlayer.volume = 1.0
+            soundPlayer = try AVAudioPlayer(contentsOf: getFileURL() as URL)
+            soundPlayer.delegate = self
+            soundPlayer.prepareToPlay()
+            soundPlayer.volume = 8.0
+            soundPlayer.play()
         
         }
         catch let error as NSError {
