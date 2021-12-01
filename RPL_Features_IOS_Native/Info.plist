@@ -72,5 +72,11 @@
 	<string>Please allow to continue with Face ID</string>
 	<key>NSContactsUsageDescription</key>
 	<string>Please allow to access your contacts list</string>
+	<key>NFCReaderUsageDescription</key>
+	<string>Please allow to access NFC on your phone</string>
+    <key>com.apple.developer.nfc.readersession.formats</key>
+      <array>
+      <string>TAG</string>
+      </array>
 </dict>
 </plist>

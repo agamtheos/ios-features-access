@@ -67,7 +67,7 @@ class ContactListViewController: UIViewController, UITableViewDataSource ,CNCont
         
         let contact = models[indexPath.row].source
         let viewc = CNContactViewController(for: contact)
-        present(UINavigationController(rootViewController: viewc), animated: true)
+        present(UINavigationController(rootViewController: viewc), animated: true, completion: nil)
     }
 
 }
