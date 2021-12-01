@@ -4,3 +4,4 @@
 - Geo-Location Access
 - Face ID/Fingerprint Access
 - Contacts list Access
+- NFC Reader Access *
