@@ -5,3 +5,4 @@
 - Face ID/Fingerprint Access
 - Contacts list Access
 - NFC Reader Access *
+- Motion Data Access( Accelerometer, Gyroscope, Magnetometer )
