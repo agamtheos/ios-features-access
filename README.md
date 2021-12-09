@@ -6,3 +6,4 @@
 - Contacts list Access
 - NFC Reader Access *
 - Motion Data Access( Accelerometer, Gyroscope, Magnetometer )
+- Microphone w/ Dictation Access
