@@ -3,15 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0479D5D726EF8A9F008C71AF /* MicSpeakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0479D5D626EF8A9F008C71AF /* MicSpeakerViewController.swift */; };
+		0479D5D726EF8A9F008C71AF /* MicrophoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0479D5D626EF8A9F008C71AF /* MicrophoneViewController.swift */; };
 		048D5C1C2756331200158B54 /* FaceIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D5C1B2756331200158B54 /* FaceIdViewController.swift */; };
 		048D5C1F275640AC00158B54 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D5C1E275640AC00158B54 /* ContactListViewController.swift */; };
 		04A1CCA02757AE6B000FB67E /* NfcReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1CC9F2757AE6B000FB67E /* NfcReaderViewController.swift */; };
 		04A1CCA42757C701000FB67E /* MotionDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1CCA32757C701000FB67E /* MotionDataViewController.swift */; };
+		04A55E0A2761DE500007F629 /* InstantSearchVoiceOverlay in Frameworks */ = {isa = PBXBuildFile; productRef = 04A55E092761DE500007F629 /* InstantSearchVoiceOverlay */; };
 		04CEEE9D26E908C0005C4E6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEEE9C26E908C0005C4E6A /* AppDelegate.swift */; };
 		04CEEE9F26E908C0005C4E6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEEE9E26E908C0005C4E6A /* SceneDelegate.swift */; };
 		04CEEEA126E908C0005C4E6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEEEA026E908C0005C4E6A /* ViewController.swift */; };
@@ -24,7 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0479D5D626EF8A9F008C71AF /* MicSpeakerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicSpeakerViewController.swift; sourceTree = "<group>"; };
+		0479D5D626EF8A9F008C71AF /* MicrophoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrophoneViewController.swift; sourceTree = "<group>"; };
 		048D5C1B2756331200158B54 /* FaceIdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIdViewController.swift; sourceTree = "<group>"; };
 		048D5C1E275640AC00158B54 /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
 		04A1CC9F2757AE6B000FB67E /* NfcReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NfcReaderViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A55E0A2761DE500007F629 /* InstantSearchVoiceOverlay in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +60,7 @@
 			children = (
 				04CEEE9B26E908C0005C4E6A /* RPL_Features_IOS_Native */,
 				04CEEE9A26E908C0005C4E6A /* Products */,
+				55A610823EE4249218F044D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,7 +80,7 @@
 				04CEEEA026E908C0005C4E6A /* ViewController.swift */,
 				04CEEEB126E91E68005C4E6A /* CameraAccessViewController.swift */,
 				04DAD79226EBAAE500FA8D43 /* GeoLocationViewController.swift */,
-				0479D5D626EF8A9F008C71AF /* MicSpeakerViewController.swift */,
+				0479D5D626EF8A9F008C71AF /* MicrophoneViewController.swift */,
 				04CEEEA226E908C0005C4E6A /* Main.storyboard */,
 				04DAD79526EBAE0100FA8D43 /* LocationManageer.swift */,
 				04CEEEA526E908C3005C4E6A /* Assets.xcassets */,
@@ -89,6 +92,13 @@
 				04A1CCA32757C701000FB67E /* MotionDataViewController.swift */,
 			);
 			path = RPL_Features_IOS_Native;
+			sourceTree = "<group>";
+		};
+		55A610823EE4249218F044D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,6 +117,9 @@
 			dependencies = (
 			);
 			name = RPL_Features_IOS_Native;
+			packageProductDependencies = (
+				04A55E092761DE500007F629 /* InstantSearchVoiceOverlay */,
+			);
 			productName = RPL_Features_IOS_Native;
 			productReference = 04CEEE9926E908C0005C4E6A /* RPL_Features_IOS_Native.app */;
 			productType = "com.apple.product-type.application";
@@ -134,6 +147,9 @@
 				Base,
 			);
 			mainGroup = 04CEEE9026E908C0005C4E6A;
+			packageReferences = (
+				04A55E082761DE500007F629 /* XCRemoteSwiftPackageReference "voice-overlay-ios" */,
+			);
 			productRefGroup = 04CEEE9A26E908C0005C4E6A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -167,7 +183,7 @@
 				04DAD79326EBAAE500FA8D43 /* GeoLocationViewController.swift in Sources */,
 				04DAD79626EBAE0100FA8D43 /* LocationManageer.swift in Sources */,
 				04CEEE9D26E908C0005C4E6A /* AppDelegate.swift in Sources */,
-				0479D5D726EF8A9F008C71AF /* MicSpeakerViewController.swift in Sources */,
+				0479D5D726EF8A9F008C71AF /* MicrophoneViewController.swift in Sources */,
 				04A1CCA42757C701000FB67E /* MotionDataViewController.swift in Sources */,
 				04A1CCA02757AE6B000FB67E /* NfcReaderViewController.swift in Sources */,
 				04CEEEB226E91E69005C4E6A /* CameraAccessViewController.swift in Sources */,
@@ -373,6 +389,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		04A55E082761DE500007F629 /* XCRemoteSwiftPackageReference "voice-overlay-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/algolia/voice-overlay-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		04A55E092761DE500007F629 /* InstantSearchVoiceOverlay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04A55E082761DE500007F629 /* XCRemoteSwiftPackageReference "voice-overlay-ios" */;
+			productName = InstantSearchVoiceOverlay;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 04CEEE9126E908C0005C4E6A /* Project object */;
 }

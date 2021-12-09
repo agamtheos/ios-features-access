@@ -67,16 +67,18 @@
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Please allow allocation access to use our app!</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>Please allow to use your Microphone!</string>
+	<string>Please allow access so we can spy on you</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Please allow this you fool!</string>
 	<key>NSFaceIDUsageDescription</key>
 	<string>Please allow to continue with Face ID</string>
 	<key>NSContactsUsageDescription</key>
 	<string>Please allow to access your contacts list</string>
 	<key>NFCReaderUsageDescription</key>
 	<string>Please allow to access NFC on your phone</string>
-    <key>com.apple.developer.nfc.readersession.formats</key>
-      <array>
-      <string>TAG</string>
-      </array>
+	<key>com.apple.developer.nfc.readersession.formats</key>
+	<array>
+		<string>TAG</string>
+	</array>
 </dict>
 </plist>

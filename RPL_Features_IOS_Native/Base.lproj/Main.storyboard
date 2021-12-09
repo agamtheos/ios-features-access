@@ -150,28 +150,20 @@
             </objects>
             <point key="canvasLocation" x="-28" y="771"/>
         </scene>
-        <!--Mic Speaker View Controller-->
+        <!--Microphone View Controller-->
         <scene sceneID="9O0-bQ-NAD">
             <objects>
-                <viewController id="TEv-yo-xCW" customClass="MicSpeakerViewController" customModule="RPL_Features_IOS_Native" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="TEv-yo-xCW" customClass="MicrophoneViewController" customModule="RPL_Features_IOS_Native" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PhI-p7-r7N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFe-Jm-v90">
-                                <rect key="frame" x="91" y="290" width="49" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Record"/>
-                                <connections>
-                                    <action selector="Record:" destination="TEv-yo-xCW" eventType="touchUpInside" id="oeN-1r-fc2"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csg-y5-QVY">
-                                <rect key="frame" x="238" y="290" width="30" height="30"/>
+                                <rect key="frame" x="116" y="258" width="143" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Play"/>
+                                <state key="normal" title="Start Dictation"/>
                                 <connections>
-                                    <action selector="Play:" destination="TEv-yo-xCW" eventType="touchUpInside" id="Psj-Gh-FLt"/>
+                                    <action selector="didTapButton" destination="TEv-yo-xCW" eventType="touchUpInside" id="tV6-1t-KkM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -180,13 +172,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="tJb-B6-N6v"/>
                     <connections>
-                        <outlet property="PlayBTN" destination="csg-y5-QVY" id="FKI-fG-5Yl"/>
-                        <outlet property="RecordBTN" destination="lFe-Jm-v90" id="kkJ-ux-oh4"/>
+                        <outlet property="playBTN" destination="csg-y5-QVY" id="tMu-32-ai1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fjj-N3-uBR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="913" y="771"/>
+            <point key="canvasLocation" x="912.79999999999995" y="770.68965517241384"/>
         </scene>
         <!--Face Id View Controller-->
         <scene sceneID="ctL-cb-tBy">
