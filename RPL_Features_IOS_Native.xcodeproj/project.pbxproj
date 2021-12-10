@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040C712D2761EC2500650343 /* BluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C712C2761EC2500650343 /* BluetoothViewController.swift */; };
+		04726E20276340C800F67A2B /* LocalNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04726E1F276340C800F67A2B /* LocalNotificationViewController.swift */; };
 		0479D5D726EF8A9F008C71AF /* MicrophoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0479D5D626EF8A9F008C71AF /* MicrophoneViewController.swift */; };
 		048D5C1C2756331200158B54 /* FaceIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D5C1B2756331200158B54 /* FaceIdViewController.swift */; };
 		048D5C1F275640AC00158B54 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D5C1E275640AC00158B54 /* ContactListViewController.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040C712C2761EC2500650343 /* BluetoothViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothViewController.swift; sourceTree = "<group>"; };
+		04726E1F276340C800F67A2B /* LocalNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationViewController.swift; sourceTree = "<group>"; };
 		0479D5D626EF8A9F008C71AF /* MicrophoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrophoneViewController.swift; sourceTree = "<group>"; };
 		048D5C1B2756331200158B54 /* FaceIdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIdViewController.swift; sourceTree = "<group>"; };
 		048D5C1E275640AC00158B54 /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 				048D5C1E275640AC00158B54 /* ContactListViewController.swift */,
 				04A1CC9F2757AE6B000FB67E /* NfcReaderViewController.swift */,
 				04A1CCA32757C701000FB67E /* MotionDataViewController.swift */,
+				040C712C2761EC2500650343 /* BluetoothViewController.swift */,
+				04726E1F276340C800F67A2B /* LocalNotificationViewController.swift */,
 			);
 			path = RPL_Features_IOS_Native;
 			sourceTree = "<group>";
@@ -186,6 +192,8 @@
 				0479D5D726EF8A9F008C71AF /* MicrophoneViewController.swift in Sources */,
 				04A1CCA42757C701000FB67E /* MotionDataViewController.swift in Sources */,
 				04A1CCA02757AE6B000FB67E /* NfcReaderViewController.swift in Sources */,
+				040C712D2761EC2500650343 /* BluetoothViewController.swift in Sources */,
+				04726E20276340C800F67A2B /* LocalNotificationViewController.swift in Sources */,
 				04CEEEB226E91E69005C4E6A /* CameraAccessViewController.swift in Sources */,
 				04CEEE9F26E908C0005C4E6A /* SceneDelegate.swift in Sources */,
 			);

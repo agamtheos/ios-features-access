@@ -76,6 +76,8 @@
 	<string>Please allow to access your contacts list</string>
 	<key>NFCReaderUsageDescription</key>
 	<string>Please allow to access NFC on your phone</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>Please allow to access your bluetooth</string>
 	<key>com.apple.developer.nfc.readersession.formats</key>
 	<array>
 		<string>TAG</string>
