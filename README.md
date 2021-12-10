@@ -7,3 +7,5 @@
 - NFC Reader Access *
 - Motion Data Access( Accelerometer, Gyroscope, Magnetometer )
 - Microphone w/ Dictation Access
+- Bluetooth Access
+- Local Notification Access
