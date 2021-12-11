@@ -10,3 +10,6 @@
 - Bluetooth Access
 - Local Notification Access
 - Caching Methods
+
+# Notes
+* = Paid Apple Developer Account
