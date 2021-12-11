@@ -9,3 +9,4 @@
 - Microphone w/ Dictation Access
 - Bluetooth Access
 - Local Notification Access
+- Caching Methods
