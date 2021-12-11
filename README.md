@@ -4,7 +4,7 @@
 - Geo-Location Access
 - Face ID/Fingerprint Access
 - Contacts list Access
-- NFC Reader Access *
+- NFC Reader Access (*)
 - Motion Data Access( Accelerometer, Gyroscope, Magnetometer )
 - Microphone w/ Dictation Access
 - Bluetooth Access
@@ -12,4 +12,4 @@
 - Caching Methods
 
 # Notes
-* = Paid Apple Developer Account
+ (*) = Paid Apple Developer Account
